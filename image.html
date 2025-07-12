@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Navigation Gallery</title>
+    <link rel="stylesheet" href="image.css">
+    <style>
+     
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <h1 class="gallery-title">Dashboard Gallery</h1>
+        
+        <div class="scroll-gallery">
+            <div class="gallery-wrapper" id="galleryWrapper">
+                <!-- Slide 1 -->
+                <div class="gallery-slide">
+                   <center> <img src="Screenshot 2025-06-14 201406.jpg"></center>
+                    <div class="image-overlay">
+                        <div class="overlay-title">Dashboard1</div>
+                        <div class="overlay-description">Discover the beauty of nature captured in this stunning photograph.</div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="gallery-slide">
+                    <center> <img src="Screenshot 2025-06-13 181850 (1).jpg"></center>
+                    <div class="image-overlay">
+                        <div class="overlay-title">Dashboard2</div>
+                        <div class="overlay-description">An artistic masterpiece that showcases creativity and imagination.</div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="gallery-slide">
+                     <center> <img src="Screenshot 2025-06-13 125843.jpg"></center>
+                    <div class="image-overlay">
+                        <div class="overlay-title">Dashboard3</div>
+                        <div class="overlay-description">A perfectly captured moment that tells a thousand stories.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="nav-arrow prev" onclick="previousSlide()">❮</button>
+            <button class="nav-arrow next" onclick="nextSlide()">❯</button>
+            
+            <!-- Image Counter -->
+            <div class="image-counter">
+                <span id="currentImage">1</span> / 3
+            </div>
+        </div>
+        
+        <!-- Navigation Dots -->
+        <div class="navigation-dots">
+            <div class="dot active" onclick="goToSlide(0)"></div>
+            <div class="dot" onclick="goToSlide(1)"></div>
+            <div class="dot" onclick="goToSlide(2)"></div>
+        </div>
+        
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        
+        <!-- Auto-scroll Control -->
+        <div class="auto-scroll-indicator">
+            Auto-scroll: <span id="autoStatus">ON</span>
+            <button class="pause-btn" onclick="toggleAutoScroll()" id="pauseBtn">Pause</button>
+        </div>
+    </div>
+
+    <script src="image.js">
+       
+    </script>
+</body>
+</html>
